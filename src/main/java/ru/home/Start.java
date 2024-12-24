@@ -8,6 +8,8 @@ public class Start {
         start1.chekSumSing();
         Start start2 = new Start();
                 start2.printColor();
+                Start start3 = new Start();
+                start3.compareNambers();
     }
 
     public void chekSumSing() {
@@ -32,5 +34,14 @@ public class Start {
             System.out.println("Зеленый");
         }
 
+    }
+    public void compareNambers() {
+        int inta = 2;
+        int intb = 2;
+if (inta >= intb){
+    System.out.println("a>=b");
+} else {
+    System.out.println("a<b");
+}
     }
 }
