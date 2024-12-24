@@ -12,6 +12,8 @@ public class Start {
                 start3.compareNambers();
                 Start start4 = new Start();
                 start4.chekSumSing1(10,5);
+                Start start5 = new Start();
+                start5.chekSing(2);
     }
 
     public void chekSumSing() {
@@ -54,13 +56,24 @@ if (inta >= intb){
 
 
 
-
     public void chekSumSing1(int int1, int int2) {
         int int3 = int1 + int2;
             System.out.println(int3 >=10 && int3 <=20);
 
 
     }
+
+    public void chekSing(int int1) {
+
+        if (int1 >= 0) {
+            System.out.println("Число положительное");
+
+        } else {
+            System.out.println("Число отрицательное");
+        }
+    }
+
+
 
 
 }
