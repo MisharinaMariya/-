@@ -10,6 +10,8 @@ public class Start {
                 start2.printColor();
                 Start start3 = new Start();
                 start3.compareNambers();
+                Start start4 = new Start();
+                start4.chekSumSing1(10,5);
     }
 
     public void chekSumSing() {
@@ -35,6 +37,10 @@ public class Start {
         }
 
     }
+
+
+
+
     public void compareNambers() {
         int inta = 2;
         int intb = 2;
@@ -44,4 +50,17 @@ if (inta >= intb){
     System.out.println("a<b");
 }
     }
+
+
+
+
+
+    public void chekSumSing1(int int1, int int2) {
+        int int3 = int1 + int2;
+            System.out.println(int3 >=10 && int3 <=20);
+
+
+    }
+
+
 }
