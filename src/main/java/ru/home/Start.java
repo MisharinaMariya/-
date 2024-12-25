@@ -6,16 +6,12 @@ public class Start {
         application1.printTreeWorld();
         Start start1 = new Start();
         start1.chekSumSing();
-        Start start2 = new Start();
-                start2.printColor();
-                Start start3 = new Start();
-                start3.compareNambers();
-                Start start4 = new Start();
-                start4.chekSumSing1(10,5);
-                Start start5 = new Start();
-                start5.chekSing(2);
-                Start start6= new Start();
-                start6.chekS(6);
+                start1.printColor();
+                start1.compareNambers();
+                start1.chekSumSing1(10,5);
+                start1.chekSing(2);
+                start1.chekS(6);
+                start1.stringCount("help", 4);
     }
 
     public void chekSumSing() {
@@ -75,9 +71,15 @@ if (inta >= intb){
         }
     }
 
-public void chekS(int int1) {
-    System.out.println(int1 <=0);
-}
+    public void chekS(int int1) {
+        System.out.println(int1 <=0);
+    }
 
+    public void stringCount(String str, int cunt) {
+
+        for (int i = 0; i < cunt; i++) {
+            System.out.println(str);
+        }
+    }
 
 }
