@@ -17,7 +17,7 @@ public class Start {
                 start1.array1();
                 start1.array2();
                 start1.array3();
-                start1.ar();
+                start1.ar(3,3);
     }
 
     public void chekSumSing() {
