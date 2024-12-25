@@ -13,6 +13,7 @@ public class Start {
                 start1.chekS(6);
                 start1.stringCount("help", 4);
                 start1.liapYear(1300);
+                start1.array();
     }
 
     public void chekSumSing() {
@@ -45,10 +46,10 @@ public class Start {
     public void compareNambers() {
         int inta = 2;
         int intb = 2;
-if (inta >= intb){
-    System.out.println("a>=b");
-} else {
-    System.out.println("a<b");
+        if (inta >= intb){
+         System.out.println("a>=b");
+}        else {
+        System.out.println("a<b");
 }
     }
 
@@ -86,5 +87,14 @@ if (inta >= intb){
     public void liapYear(int year) {
             System.out.println(year % 400 == 0 || (year % 4 == 0 && year % 100 !=0));
 
+    }
+
+    public void array() {
+        int[] arr = {1,1,0,0,1,0,1,1,0,0};
+        for (int i = 0; i < arr.length; i ++ ) {
+            if (arr[i] == 1) {
+                arr[i] = 0;
+            } else { arr[i] = 1;}
+        }
     }
 }
