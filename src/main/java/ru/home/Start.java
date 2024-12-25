@@ -14,6 +14,7 @@ public class Start {
                 start1.stringCount("help", 4);
                 start1.liapYear(1300);
                 start1.array();
+                start1.array1();
     }
 
     public void chekSumSing() {
@@ -97,4 +98,14 @@ public class Start {
             } else { arr[i] = 1;}
         }
     }
+
+    public void array1() {
+        int[] arr = new int [100];
+        for (int i = 0; i < arr.length; i ++ ) {
+            arr[i] = i + 1;
+        }
+    }
+
+
+
 }
