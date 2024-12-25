@@ -12,6 +12,7 @@ public class Start {
                 start1.chekSing(2);
                 start1.chekS(6);
                 start1.stringCount("help", 4);
+                start1.liapYear(1300);
     }
 
     public void chekSumSing() {
@@ -82,4 +83,8 @@ if (inta >= intb){
         }
     }
 
+    public void liapYear(int year) {
+            System.out.println(year % 400 == 0 || (year % 4 == 0 && year % 100 !=0));
+
+    }
 }
