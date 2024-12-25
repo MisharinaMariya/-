@@ -16,6 +16,8 @@ public class Start {
                 start1.array();
                 start1.array1();
                 start1.array2();
+                start1.array3();
+                start1.ar();
     }
 
     public void chekSumSing() {
@@ -118,7 +120,23 @@ public class Start {
         }
     }
 
+    public void array3() {
+        int[][] table = new int[2][2];
+        for (int i = 0; i < 2; i++) {
+            for (int j = 0; j < 2; j++) {
+                if (i == j) {
+                    table[i][j] = 1;
+                }
+            }
+        }
 
-
+    }
+    public int[] ar(int len, int initialValue) {
+        int[] t = new int[len];
+        for (int i = 0; i < len; i++) {
+            t[i] = initialValue;
+        }
+        return t;
+    }
 
 }
