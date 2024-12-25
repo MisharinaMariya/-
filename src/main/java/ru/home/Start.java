@@ -15,6 +15,7 @@ public class Start {
                 start1.liapYear(1300);
                 start1.array();
                 start1.array1();
+                start1.array2();
     }
 
     public void chekSumSing() {
@@ -95,7 +96,9 @@ public class Start {
         for (int i = 0; i < arr.length; i ++ ) {
             if (arr[i] == 1) {
                 arr[i] = 0;
-            } else { arr[i] = 1;}
+            } else {
+                arr[i] = 1;
+            }
         }
     }
 
@@ -105,6 +108,16 @@ public class Start {
             arr[i] = i + 1;
         }
     }
+
+    public void array2() {
+        int[] arr = {1, 5, 3, 2, 11, 4, 5, 2, 4, 8, 9, 1};
+        for (int i = 0; i < arr.length; i++) {
+            if (arr[i] < 6) {
+                arr[i] = i * 2;
+            }
+        }
+    }
+
 
 
 
