@@ -6,18 +6,18 @@ public class Start {
         application1.printTreeWorld();
         Start start1 = new Start();
         start1.chekSumSing();
-                start1.printColor();
-                start1.compareNambers();
-                start1.chekSumSing1(10,5);
-                start1.chekSing(2);
-                start1.chekS(6);
-                start1.stringCount("help", 4);
-                start1.liapYear(1300);
-                start1.array();
-                start1.array1();
-                start1.array2();
-                start1.array3();
-                start1.ar(3,3);
+        start1.printColor();
+        start1.compareNambers();
+        start1.chekSumSing1(10, 5);
+        start1.chekSing(2);
+        start1.chekS(6);
+        start1.stringCount("help", 4);
+        start1.liapYear(1300);
+        start1.array();
+        start1.array1();
+        start1.array2();
+        start1.array3();
+        start1.ar(3, 3);
     }
 
     public void chekSumSing() {
@@ -34,35 +34,31 @@ public class Start {
 
     public void printColor() {
         int value = -1;
-        if (value <=0){
+        if (value <= 0) {
             System.out.println("Красный");
-        } else if (value >0 && value <= 100) {
+        } else if (value > 0 && value <= 100) {
             System.out.println("Желтый");
-        } else if (value >100) {
+        } else if (value > 100) {
             System.out.println("Зеленый");
         }
 
     }
 
 
-
-
     public void compareNambers() {
         int inta = 2;
         int intb = 2;
-        if (inta >= intb){
-         System.out.println("a>=b");
-}        else {
-        System.out.println("a<b");
-}
+        if (inta >= intb) {
+            System.out.println("a>=b");
+        } else {
+            System.out.println("a<b");
+        }
     }
-
-
 
 
     public void chekSumSing1(int int1, int int2) {
         int int3 = int1 + int2;
-            System.out.println(int3 >=10 && int3 <=20);
+        System.out.println(int3 >= 10 && int3 <= 20);
 
 
     }
@@ -78,7 +74,7 @@ public class Start {
     }
 
     public void chekS(int int1) {
-        System.out.println(int1 <=0);
+        System.out.println(int1 <= 0);
     }
 
     public void stringCount(String str, int cunt) {
@@ -89,13 +85,13 @@ public class Start {
     }
 
     public void liapYear(int year) {
-            System.out.println(year % 400 == 0 || (year % 4 == 0 && year % 100 !=0));
+        System.out.println(year % 400 == 0 || (year % 4 == 0 && year % 100 != 0));
 
     }
 
     public void array() {
-        int[] arr = {1,1,0,0,1,0,1,1,0,0};
-        for (int i = 0; i < arr.length; i ++ ) {
+        int[] arr = {1, 1, 0, 0, 1, 0, 1, 1, 0, 0};
+        for (int i = 0; i < arr.length; i++) {
             if (arr[i] == 1) {
                 arr[i] = 0;
             } else {
@@ -105,8 +101,8 @@ public class Start {
     }
 
     public void array1() {
-        int[] arr = new int [100];
-        for (int i = 0; i < arr.length; i ++ ) {
+        int[] arr = new int[100];
+        for (int i = 0; i < arr.length; i++) {
             arr[i] = i + 1;
         }
     }
@@ -131,6 +127,7 @@ public class Start {
         }
 
     }
+
     public int[] ar(int len, int initialValue) {
         int[] t = new int[len];
         for (int i = 0; i < len; i++) {
