@@ -14,6 +14,8 @@ public class Start {
                 start4.chekSumSing1(10,5);
                 Start start5 = new Start();
                 start5.chekSing(2);
+                Start start6= new Start();
+                start6.chekS(6);
     }
 
     public void chekSumSing() {
@@ -73,7 +75,9 @@ if (inta >= intb){
         }
     }
 
-
+public void chekS(int int1) {
+    System.out.println(int1 <=0);
+}
 
 
 }
