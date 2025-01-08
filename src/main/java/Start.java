@@ -1,4 +1,11 @@
-package animals;
+import animals.Animal;
+import animals.Cat;
+import animals.Dish;
+import animals.Dog;
+import figure.Circle;
+import figure.Form;
+import figure.Rectangle;
+import figure.Triangle;
 
 public class Start {
 
@@ -50,6 +57,17 @@ public class Start {
             c.eat(dish);
             c.isSatietyCat();
         }
+
+        Form[] forms=new Form[3];
+        forms[0]=new Circle("красный", "синий", 7);
+        forms[1]=new Rectangle("красный", "синий", 7, 7);
+        forms[2]=new Triangle("красный", "синий", 7,7,7);
+
+        for (int i=0; i<forms.length; i++){
+            Form f=forms[i];
+            f.console();
+        }
+
     }
 
 
