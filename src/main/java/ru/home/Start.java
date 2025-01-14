@@ -2,23 +2,30 @@ package ru.home;
 
 public class Start {
     public static void main(String[] args) {
-        Application application1 = new Application();
-        application1.printTreeWorld();
         Start start1 = new Start();
+        start1.printTreeWorld();
         start1.chekSumSing();
         start1.printColor();
         start1.compareNambers();
-        start1.chekSumSing1(10, 5);
+        System.out.println(start1.chekSumSing1(10, 5));
         start1.chekSing(2);
-        start1.chekS(6);
-        start1.stringCount("help", 4);
-        start1.liapYear(1300);
+        System.out.println(start1.chekS(6));
+        start1.stringCount("hi", 4);
+        System.out.println(start1.liapYear(1300));
         start1.array();
         start1.array1();
         start1.array2();
         start1.array3();
         start1.ar(3, 3);
     }
+
+
+    public void printTreeWorld () {
+        System.out.println("Orange");
+        System.out.println("Banana");
+        System.out.println("Apple");
+    }
+
 
     public void chekSumSing() {
         int int1 = 1;
@@ -56,9 +63,9 @@ public class Start {
     }
 
 
-    public void chekSumSing1(int int1, int int2) {
+    public boolean chekSumSing1(int int1, int int2) {
         int int3 = int1 + int2;
-        System.out.println(int3 >= 10 && int3 <= 20);
+        return int3 >= 10 && int3 <= 20;
 
 
     }
@@ -73,8 +80,8 @@ public class Start {
         }
     }
 
-    public void chekS(int int1) {
-        System.out.println(int1 <= 0);
+    public boolean chekS(int int1) {
+        return int1 <= 0;
     }
 
     public void stringCount(String str, int cunt) {
@@ -84,8 +91,8 @@ public class Start {
         }
     }
 
-    public void liapYear(int year) {
-        System.out.println(year % 400 == 0 || (year % 4 == 0 && year % 100 != 0));
+    public boolean liapYear(int year) {
+        return year % 400 == 0 || (year % 4 == 0 && year % 100 != 0);
 
     }
 
