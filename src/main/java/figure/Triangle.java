@@ -5,7 +5,7 @@ public class Triangle extends Background implements Form {
     public Triangle(String colorBackground, String colorBorder, double sideA, double sideB, double sideC) {
         super(colorBackground, colorBorder);
         this.sideA=sideA;
-        this.sideB=sideC;
+        this.sideB=sideB;
         this.sideC=sideC;
     }
 
