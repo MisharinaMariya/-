@@ -1,6 +1,6 @@
 package figure;
 
-public class Rectangle extends Background {
+public class Rectangle extends Background implements Form {
 
 
     public Rectangle(String colorBackground, String colorBorder, double sideA, double sideB) {

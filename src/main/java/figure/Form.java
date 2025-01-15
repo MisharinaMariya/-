@@ -14,10 +14,7 @@ public interface Form {
     default void console(){
         System.out.println(getPerimeter());
         System.out.println(getSquare());
-        System.out.println(getColorBackground());
-        System.out.println(getColorBorder());
+
     }
 
-    String getColorBackground();
-    String getColorBorder();
 }

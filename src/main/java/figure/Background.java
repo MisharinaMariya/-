@@ -1,6 +1,6 @@
 package figure;
 
-public class Background implements Form {
+public abstract class Background {
 
     private String colorBackground;
     private String colorBorder;
@@ -10,12 +10,12 @@ public class Background implements Form {
         this.colorBorder = colorBorder;
     }
 
-    @Override
+
     public String getColorBackground() {
         return colorBackground;
     }
 
-    @Override
+
     public String getColorBorder() {
         return colorBorder;
     }

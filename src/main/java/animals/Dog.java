@@ -1,9 +1,11 @@
 package animals;
 
 public class Dog extends Animal {
+    private static int count=0;
 
     public Dog(String name) {
         super(name);
+        add();
     }
 
     @Override
@@ -28,5 +30,13 @@ public class Dog extends Animal {
 
         }
 
+    }
+    @Override
+    public void add (){
+        super.add();
+        count++;
+    }
+    public static int getCount(){
+        return count;
     }
 }

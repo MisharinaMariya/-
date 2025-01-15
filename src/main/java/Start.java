@@ -10,9 +10,7 @@ import figure.Triangle;
 public class Start {
 
     public static void main(String[] args) {
-        int countCat = 0;
-        int countDog = 0;
-        int countAnimal = 0;
+
         Animal[] animals = new Animal[11];
         animals[0] = new Cat("Мурзик", 4,false);
         animals[1] = new Cat("Мурзик", 4,false);
@@ -25,20 +23,10 @@ public class Start {
         animals[7] = new Dog("");
         animals[8] = new Dog("");
 
-        animals[9] = new Animal("");
-        animals[10] = new Animal("");
-        for (int i=0; i < animals.length; i++) {
-            if (animals[i] instanceof Cat) {
-                countCat++;
-            } else if(animals[i] instanceof Dog) {
-                countDog++;
-            } else if(animals[i] instanceof Animal) {
-                countAnimal++;
-            }
-        }
-        System.out.println("Коты: " + countCat);
-        System.out.println("Собаки: " + countDog);
-        System.out.println("Животные: " + countAnimal);
+
+        System.out.println("Коты: " + Cat.getCount());
+        System.out.println("Собаки: " + Dog.getCount());
+        System.out.println("Животные: " + Animal.getCount());
 
 
         Cat[] array=new Cat[3];

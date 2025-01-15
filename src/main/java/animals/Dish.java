@@ -10,7 +10,7 @@ public class Dish {
 
 
     public boolean eatFromDish(int countEating){
-        if (countEating < countEat) {
+        if (countEating <= countEat) {
             countEat= countEat-countEating;
             return true;
         } else {

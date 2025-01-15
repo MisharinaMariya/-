@@ -1,7 +1,7 @@
 package animals;
 
 public class Cat extends Animal {
-
+    private static int count=0;
     private boolean satiety;
     private int countEat;
 
@@ -9,6 +9,7 @@ public class Cat extends Animal {
         super(name);
         this.countEat=countEat;
         this.satiety=satiety;
+        add();
     }
 
     @Override
@@ -27,7 +28,6 @@ public class Cat extends Animal {
 
             System.out.println( "Кот не умеет плавать.");
 
-
     }
 
     public void eat(Dish dish) {
@@ -42,5 +42,13 @@ public class Cat extends Animal {
         }else {
             System.out.println( super.getName()+" хочу еще кушоц" );
         }
+    }
+    @Override
+    public void add (){
+        super.add();
+        count++;
+    }
+    public static int getCount(){
+        return count;
     }
 }

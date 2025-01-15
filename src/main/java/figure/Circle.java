@@ -8,9 +8,6 @@ public class Circle extends Background implements Form {
 
     private double radius;
 
-
-
-
     @Override
     public double getSquare() {
         return PI*radius*radius;
