@@ -5,6 +5,7 @@ import java.util.HashSet;
 import java.util.Set;
 
 public class Start {
+
     public static void main(String[] args) {
         String[] arr = {"Привет","Привет","Пока","Хэллоу","Добрый день","Здравствуйте", "До свидания","До встречи","Добрый день","Пока"};
         Set<String> set = new HashSet<>();
@@ -21,6 +22,18 @@ public class Start {
         }
         System.out.println(set);
         System.out.println(hashMap);
+
+        TelephoneBook telephoneBook = new TelephoneBook();
+        telephoneBook.add("Иванов", "111");
+        telephoneBook.add("Иванов", "222");
+        telephoneBook.add("Петров", "333");
+        telephoneBook.add("Сидоров", "444");
+
+        System.out.println(telephoneBook.get("Иванов"));
+        System.out.println(telephoneBook.get("Петров"));
+        System.out.println(telephoneBook.get("Сидоров"));
     }
+
+
 
 }

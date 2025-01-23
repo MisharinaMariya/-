@@ -4,7 +4,7 @@ import java.util.*;
 
 public class TelephoneBook {
 
-    HashMap<String, List<String>> hashMap = new HashMap<>();
+    private HashMap<String, List<String>> hashMap = new HashMap<>();
 
     public void add(String surname, String phone){
 
