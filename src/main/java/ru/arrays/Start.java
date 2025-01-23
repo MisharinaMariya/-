@@ -7,16 +7,16 @@ import java.util.Set;
 public class Start {
 
     public static void main(String[] args) {
-        String[] arr = {"Привет","Привет","Пока","Хэллоу","Добрый день","Здравствуйте", "До свидания","До встречи","Добрый день","Пока"};
+        String[] arr = {"Привет", "Привет", "Пока", "Хэллоу", "Добрый день", "Здравствуйте", "До свидания", "До встречи", "Добрый день", "Пока"};
         Set<String> set = new HashSet<>();
-        HashMap<String,Integer> hashMap = new HashMap<>();
-        for (int i= 0; i < arr.length; i++){
+        HashMap<String, Integer> hashMap = new HashMap<>();
+        for (int i = 0; i < arr.length; i++) {
             set.add(arr[i]);
             Integer value = hashMap.get(arr[i]);
-            if (value == null){
+            if (value == null) {
                 hashMap.put(arr[i], 1);
             } else {
-                hashMap.put(arr[i], value+1);
+                hashMap.put(arr[i], value + 1);
             }
 
         }
@@ -33,7 +33,6 @@ public class Start {
         System.out.println(telephoneBook.get("Петров"));
         System.out.println(telephoneBook.get("Сидоров"));
     }
-
 
 
 }
