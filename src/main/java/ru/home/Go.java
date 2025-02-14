@@ -1,9 +1,6 @@
 package ru.home;
 
-public class Start {
-    public static void main(String[] params) {
-
-    }
+public class Go {
 
     public int getFactorial(int f) {
         int result = 1;
